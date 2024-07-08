@@ -13,14 +13,8 @@ function App() {
 
   return (
     <>
-      <div >
-        {/*<LeftMenu/>
-          <MidMenu/>
-          <RightMenu/>*/
-  }
-        </div>
-      <Router>
-      <div>
+         <Router>
+     
         <section>                              
             <Routes>                                                                  
                <Route path="/" element={<Login/>}/>
@@ -29,7 +23,7 @@ function App() {
                <Route path="/cadastro" element={<Cadastro/>}/>
             </Routes>                    
         </section>
-      </div>
+      
     </Router>
     </>
   );

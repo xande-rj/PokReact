@@ -1,0 +1,19 @@
+.bodyLogin{
+    width: 40vw;
+    background-color: rgba(243, 101, 101, 0.555);
+    height: 35vh;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+   
+}
+
+
+.bodyLogin form{
+    display:grid ;
+
+}
+
+.bodyLogin button{
+    margin-top: 10px;
+}

@@ -7,6 +7,11 @@ import {
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { Button, CircularProgress } from "@mui/material";
+
+import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
+
+
+import style from './login.module.css'
 export default function Login() {
   const navigate = useNavigate();
 
@@ -66,7 +71,7 @@ export default function Login() {
 
   return (
     <>
-      
+      <div className={style.bodyLogin}>
           <h1> Login </h1>   
         
           {loading && <CircularProgress />}
@@ -75,7 +80,7 @@ export default function Login() {
 
           <form>
             <label>
-              Usuario :
+            E-mail :
               <br />
               <input
                 id="email-address"
@@ -88,7 +93,7 @@ export default function Login() {
             </label>
             <br />
             <label>
-              Senha : 
+            Password : 
               <br />
               <input
                 id="password"
@@ -103,16 +108,17 @@ export default function Login() {
             <Button variant="contained" color="success" onClick={onLogin} >
               Login
             </Button>
-          </form>
-          
-     
-          <Button 
+            <Button 
             onClick={() => navigate("/cadastro")}
             variant="contained"
             color="info"
           >
-            Cadastro
+            Sign up
           </Button>
+          </form>
+          
+     
+          
           
           {users.length > 0 && (
             <>
@@ -121,14 +127,14 @@ export default function Login() {
                 variant="contained"
                 color="warning"
               >
-                Pokemon api
+                Pokemon api <CatchingPokemonIcon></CatchingPokemonIcon>
               </Button>
               <Button variant="contained" color="error" onClick={handleLogout}>
                 Logout
               </Button>
             </>
           )}
-         
+         </div>
     </>
   );
 }
