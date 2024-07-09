@@ -35,6 +35,7 @@ export default function ApiPokemon() {
   const timer = useRef<ReturnType<typeof setTimeout>>();
 
   const navigate = useNavigate()
+  
   const enviarDados = async (nome: string) => {
     setLoading(true);
     timer.current = setTimeout(async () => {

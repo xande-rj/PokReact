@@ -1,19 +1,29 @@
 .bodyLogin{
     width: 40vw;
-    background-color: rgba(243, 101, 101, 0.555);
-    height: 35vh;
-   display: grid;
-   justify-items: center;
-   align-items: center;
-   
+    background-color: rgb(243, 101, 101);
+    height: 45vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    border: 2px solid black ;
+    align-items: center;
 }
-
 
 .bodyLogin form{
     display:grid ;
-
+    grid-area: 2;
 }
 
 .bodyLogin button{
     margin-top: 10px;
+}
+
+.pokedexScreen{
+    justify-self: center;
+    width: 70%;
+    height: 90%;
+    background-color: rgb(135, 253, 253);
+    border: 2px solid black ;
+  display: grid;
+  justify-content: center;
 }
