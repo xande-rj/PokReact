@@ -1,0 +1,21 @@
+.pokemonlistback{
+    margin-top: 20px;
+    display: flex;
+    gap:  20px;
+    flex-wrap: wrap;
+    justify-self: left;
+    text-align: center;
+    margin-left: 9px;
+}
+
+.pokemonlistback button{
+    margin-left: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.pokemonlistback li{
+    padding-right: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}

@@ -27,3 +27,6 @@
   display: grid;
   justify-content: center;
 }
+.pokedexScreen img{
+    width: 250px;
+}

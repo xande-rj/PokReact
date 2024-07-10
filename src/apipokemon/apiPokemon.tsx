@@ -7,9 +7,7 @@ import { PokemonDetails } from "../componets/PokemonDetails";
 import { LogoutButton } from "../componets/LogoutButton";
 import { Button, ThemeProvider, createTheme } from "@mui/material";
 import { green } from "@mui/material/colors";
-import "./style.css";
 import { useNavigate } from "react-router-dom";
-
 
 const theme = createTheme({
   palette: {
@@ -67,7 +65,7 @@ export default function ApiPokemon() {
       {userEmail ? (
         <>
           <PokemonForm enviarDados={enviarDados} loading={loading} />
-          <PokemonList pokemonData={pokemonData} removePokemon={removePokemon} />
+          
           {dadosTypes.length > 0 && (
             <PokemonDetails
               dadosNome={dadosNome}
@@ -76,6 +74,7 @@ export default function ApiPokemon() {
               addPokemon={addPokemon}
             />
           )}
+          <PokemonList pokemonData={pokemonData} removePokemon={removePokemon} />
           {error && <span>Erro na Requisição</span>}
           <LogoutButton handleLogout={handleLogout} />
         </>
@@ -87,6 +86,7 @@ export default function ApiPokemon() {
           </Button>
         </>
       )}
+      
     </ThemeProvider>
   );
 }

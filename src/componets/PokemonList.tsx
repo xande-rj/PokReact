@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import style from "./css/pokemonList.module.css"
 
 interface PokemonData {
   name: string;
@@ -15,7 +16,7 @@ export const PokemonList: React.FC<Props> = ({ pokemonData, removePokemon }) => 
   const navigate = useNavigate()
 
   return (
-    <ul>
+    <ul className={style.pokemonlistback}>
       {pokemonData.map((pokemon, index) => (
         <li key={index}>
           {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
@@ -23,13 +24,13 @@ export const PokemonList: React.FC<Props> = ({ pokemonData, removePokemon }) => 
           <img src={pokemon.sprite} alt={pokemon.name} />
           <br />
           <Button 
-            variant="outlined" 
+            variant="contained" 
             onClick={() => navigate(`/api-detalhes/${pokemon.name}`) }
             >
             Detalhes
           </Button>
           <Button 
-            variant="outlined" 
+            variant="contained" 
             color="error" 
             onClick={() => removePokemon(pokemon.name)}>
             Remover
