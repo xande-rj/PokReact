@@ -27,13 +27,13 @@ export const PokemonList: React.FC<Props> = ({ pokemonData, removePokemon }) => 
             variant="contained" 
             onClick={() => navigate(`/api-detalhes/${pokemon.name}`) }
             >
-            Detalhes
+            Details
           </Button>
           <Button 
             variant="contained" 
             color="error" 
             onClick={() => removePokemon(pokemon.name)}>
-            Remover
+            Remove
           </Button>
         </li>
       ))}

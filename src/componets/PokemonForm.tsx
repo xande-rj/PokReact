@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TextField, Button, CircularProgress } from "@mui/material";
-
+import style from "./css/pokemonForm.module.css"
 interface Props {
   enviarDados: (nome: string) => void;
   loading: boolean;
@@ -15,22 +15,26 @@ export const PokemonForm: React.FC<Props> = ({ enviarDados, loading }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
+    <form onSubmit={handleSubmit} className={style.pokemonForm}>
       <label>
-        Nome Pokemon: <br />
+        Name Pokemon : 
+        <br />
         <TextField
-          label="Standard"
+          label="Name or ID"
           variant="standard"
           type="text"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
         />
       </label>
-      <br />
       <Button type="submit" variant="contained" disabled={loading}>
-        Enviar
-      </Button><br />
-      {loading && <CircularProgress />}
+        Search
+      </Button>
+      
+      <div className={style.pokemonFormLoading}>
+        {loading && <CircularProgress />}
+      </div>
+      
     </form>
   );
 };

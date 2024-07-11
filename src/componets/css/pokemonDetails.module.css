@@ -1,0 +1,24 @@
+.pokemonDetails {
+  display: grid;
+  width: 50%;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 9px;
+  border: 1px solid black;
+}
+.pokemonDetailsResult {
+  display: grid;
+  justify-content: center;
+  gap: 8px;
+}
+.pokemonDetailsResult li {
+  margin-top: 5px;
+}
+
+.pokemonDetailsadd {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
