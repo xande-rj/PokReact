@@ -130,13 +130,15 @@ export default function Login() {
           >
             Sign up
           </Button>
+          <div className={style.pokemonFormLoading} >
           {loading && <CircularProgress />}
+          </div>
         </form>
         {users.length > 0 ? (
           <>
             <div></div>
             <div className={style.pokedexScreen}>
-              {dadosNome.charAt(0).toUpperCase() + dadosNome.slice(1)}
+              <h1>{dadosNome.charAt(0).toUpperCase() + dadosNome.slice(1)}</h1>
               <img src={dadosSprite} alt="Pokemon imagem" />
             </div>
             <Button variant="contained" color="error" onClick={handleLogout}>

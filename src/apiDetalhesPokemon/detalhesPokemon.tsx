@@ -47,7 +47,7 @@ export default function detalhesPokemon() {
             voltar
           </Button>
       <br />
-      Ataques:
+      {/* Ataques:
       {dadosMove.length > 0 &&
         dadosMove.map((move: any, index) => (
           <li key={index}>
@@ -56,7 +56,7 @@ export default function detalhesPokemon() {
               {move.version_group_details[0].move_learn_method.name} : {move.version_group_details[0].level_learned_at}
             </ul>
           </li>
-        ))}
+        ))} */}
     </div>
   );
 }

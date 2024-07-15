@@ -30,3 +30,13 @@
 .pokedexScreen img{
     width: 200px;
 }
+
+
+.pokedexScreen h1{
+    justify-self: center;
+    align-self: center;
+}
+.pokemonFormLoading {
+    margin-top: 20px;
+    justify-self: center;
+  }
