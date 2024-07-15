@@ -156,7 +156,7 @@ export default function Login() {
           <>
             <div></div>
             <div className={style.pokedexScreen}>
-              {dadosNome.charAt(0).toUpperCase() + dadosNome.slice(1)} 
+              <h1>{dadosNome.charAt(0).toUpperCase() + dadosNome.slice(1)} </h1>
               <div>
                 <img src={dadosSprite} alt="Pokemon imagem" />
               </div>

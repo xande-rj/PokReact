@@ -34,8 +34,9 @@
 
 .pokedexScreen h1{
     justify-self: center;
-    align-self: center;
+    align-self: center
 }
+
 .pokemonFormLoading {
     margin-top: 20px;
     justify-self: center;

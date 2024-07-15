@@ -1,0 +1,40 @@
+.signupScreenBack{
+    height: 50vh;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.signupScreen{
+    background-color: white;
+    padding-right: 10px;
+    border-radius: 9px;
+    align-items: center;
+    display: grid;
+}
+
+.signupScreen h1{
+    text-align: center;
+}
+
+.signupScreen form{
+    justify-self: center;
+}
+.signupScreen button{
+    margin-top: 20px;
+}
+
+.signupScreen p{
+    margin-top: 20px;
+
+    font-size: 17px;
+}
+.signupScreen a{
+   cursor: pointer;
+   font-weight: bold;
+
+}
+
+.pokemonSignupLoading {
+    margin-top: 20px;
+    justify-self: center;
+  }
