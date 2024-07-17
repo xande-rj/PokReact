@@ -1,5 +1,7 @@
-import { Button } from "@mui/material";
+import { Button, ThemeProvider } from "@mui/material";
 import style from "./css/pokemonDetails.module.css";
+import themes from "../apiDetalhesPokemon/theme";
+
 interface Dado {
   type: {
     name: string;
@@ -29,11 +31,17 @@ export const PokemonDetails: React.FC<Props> = ({
         <h2>Result :</h2>
         <h1>{dadosNome.charAt(0).toUpperCase() + dadosNome.slice(1)}</h1>
         <h3>Types :</h3>
-        <ul>
-          {dadosTypes.map((dado, index) => (
-            <li key={index}>{dado.type.name.toUpperCase()}</li>
-          ))}
-        </ul>
+        <ThemeProvider theme={themes}>
+          
+            {dadosTypes.map((dado, index) => (
+              <ul>
+              <Button variant="contained" color={dado.type.name}>
+                <li key={index}>{dado.type.name.toUpperCase()}</li>
+              </Button>
+               </ul>
+            ))}
+         
+        </ThemeProvider>
         <h3>Image :</h3>
         <img src={dadosSprite} alt="Pokemon imagem" />
       </div>

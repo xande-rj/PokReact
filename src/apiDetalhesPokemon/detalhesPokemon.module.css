@@ -1,0 +1,29 @@
+.detailsPokemonScreen{
+    height: 60vh;
+    width: 70vw;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+
+}
+.attacksSreen{
+    text-align: center;
+
+}
+.infoScreen{
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    gap: 5px;
+}
+.infoScreen img{
+    width: 150px;
+}
+
+.infoScreen h2{
+    text-align: center;
+}
+.ulText{
+    color: white;
+}
