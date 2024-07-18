@@ -35,7 +35,7 @@ export const PokemonDetails: React.FC<Props> = ({
           
             {dadosTypes.map((dado, index) => (
               <ul>
-              <Button variant="contained" color={dado.type.name}>
+              <Button variant="contained" color={dado.type.name as any}>
                 <li key={index}>{dado.type.name.toUpperCase()}</li>
               </Button>
                </ul>

@@ -17,8 +17,15 @@
     display: grid;
     gap: 5px;
 }
+.infoScreen ul{
+    justify-self: center;
+}
+.infoScreenH1{
+    justify-self: center;
+}
 .infoScreen img{
     width: 150px;
+    justify-self: center;
 }
 
 .infoScreen h2{
@@ -26,4 +33,9 @@
 }
 .ulText{
     color: white;
+}
+.infoScreenGenButtons{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
