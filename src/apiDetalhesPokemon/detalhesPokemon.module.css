@@ -31,9 +31,7 @@
 .infoScreen h2{
     text-align: center;
 }
-.ulText{
-    color: white;
-}
+
 .infoScreenGenButtons{
     display: flex;
     gap: 10px;

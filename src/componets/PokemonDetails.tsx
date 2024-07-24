@@ -1,6 +1,6 @@
 import { Button, ThemeProvider } from "@mui/material";
 import style from "./css/pokemonDetails.module.css";
-import themes from "../apiDetalhesPokemon/theme";
+import themes from "../theme";
 
 interface Dado {
   type: {

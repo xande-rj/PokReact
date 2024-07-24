@@ -70,36 +70,54 @@ declare module "@mui/material/styles" {
     palette: {
       electric: {
         main: "#E3D026",
+
       },
       fire: {
         main: "#FF3D00",
+        contrastText: '#fff',
+
       },
       flying: {
         main: "#80DEEA",
+        
+        
       },
       bug: {
         main: "#43A047",
+        contrastText: '#fff',
+
       },
       dark: {
         main: "#212121",
+        contrastText: '#fff',
+
       },
       dragon: {
         main: "#006064",
+        contrastText: '#fff',
+
       },
       fairy: {
         main: "#F50057",
       },
       fighting: {
         main: "#F44336",
+        contrastText: '#fff',
+
       },
       ghost: {
         main: "#5E35B1",
+        contrastText: '#fff',
+
       },
       grass: {
         main: "#388E3C",
+        contrastText: '#fff',
+
       },
       ground: {
         main: "#FF9800",
+        
       },
       ice: {
         main: "#18FFFF",
@@ -109,18 +127,26 @@ declare module "@mui/material/styles" {
       },
       poison: {
         main: "#4A148C",
+        contrastText: '#fff',
+
       },
       psychic: {
         main: "#FF4081",
+        contrastText: '#fff',
+
       },
       rock: {
         main: "#FF6D00",
+        contrastText: '#fff',
+
       },
       steel: {
         main: "#E0E0E0",
       },
       water: {
         main: "#0277BD",
+        contrastText: '#fff',
+
       },
     },
   });

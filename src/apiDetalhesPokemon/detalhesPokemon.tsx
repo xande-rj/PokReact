@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import style from "./detalhesPokemon.module.css";
 
-import themes from "./theme"
+import themes from "../theme"
 
 const theme = createTheme({
   palette: {
