@@ -7,10 +7,7 @@
     border: 2px solid black;
 
 }
-.attacksSreen{
-    text-align: center;
 
-}
 .infoScreen{
     justify-self: center;
     align-self: center;
@@ -37,3 +34,20 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+
+.attacksSreen{
+    text-align: center;
+    overflow-y: auto;
+
+}
+.infoAttacks{
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap :15px
+}
+
+
